@@ -1,0 +1,66 @@
+* {
+  box-sizing:border-box;
+}
+
+.vertical-align {
+  height:100%;
+  display: flex; /* With all due respect, fuck you IE */
+  align-items: center;
+}
+
+/* Home page */
+.landing {
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+.landing h1 {
+  font-size:16em;
+  margin:0;
+  margin-bottom:-20px;
+}
+
+.landing p {
+  font-size:18pt;
+}
+
+.room-size-select {
+  display:block;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.room-size-select a {
+  border:none;
+  font-size:20pt;
+}
+
+.room-size-select .glyphicon {
+  font-size:50pt;
+  margin:30px;
+  margin-bottom:20px;
+}
+
+/* Join */
+.join {
+  display:block;
+  width:80%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Chatbox */
+.main {
+  height:80%;
+}
+
+.main .row {
+  height:100%;
+}
+
+.main .row .well {
+  height:100%;
+}

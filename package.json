@@ -1,0 +1,23 @@
+{
+  "name": "tahc",
+  "version": "1.0.0",
+  "description": "A simple chatting application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lucas F T Hennigen",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.6",
+    "socketio-auth": "0.0.5"
+  },
+  "devDependencies": {
+    "colors.css": "^3.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

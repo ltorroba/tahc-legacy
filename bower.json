@@ -1,0 +1,10 @@
+{
+  "name": "tahc",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "socket.io-client": "^1.4.6"
+  }
+}

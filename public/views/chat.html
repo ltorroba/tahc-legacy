@@ -1,0 +1,39 @@
+<div class="vertical-align">
+  <div class="container panel">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-header">
+          <h1>Tahc <small>#0000</small></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="row">
+        <div class="col-sm-3">
+          <h4>Members</h4>
+
+          <div class="list-group">
+            <li class="list-group-item">User 1</li>
+          </div>
+        </div>
+
+        <div class="col-sm-9 main">
+          <h4>Chat</h4>
+
+          <div class="well">
+            <p ng-repeat="msg in messages">{{msg.content}}</p>
+          </div>
+
+          <div class="input-group">
+            <input ng-model="input" type="text" class="form-control" placeholder="Type a message here">
+
+            <span class="input-group-btn">
+              <button ng-click="sendMessage()" class="btn btn-default" type="button">Send</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
