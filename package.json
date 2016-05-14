@@ -15,7 +15,6 @@
     "socketio-auth": "0.0.5"
   },
   "devDependencies": {
-    "colors.css": "^3.0.0",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
