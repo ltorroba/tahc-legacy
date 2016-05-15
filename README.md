@@ -29,8 +29,6 @@ following these instructions:
 1. Fork the repository and clone it on your computer.
 2. Navigate to the directory where you've cloned the repository.
 3. Run `npm install` to obtain all required dependencies.
-  * If you intend on contributing to Tahc's development, install developer
-    packages by running `npm install --dev` instead.
 4. Run `bower install` to obtain all required libraries.
 
 ## Usage
