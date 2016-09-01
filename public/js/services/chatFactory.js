@@ -8,10 +8,7 @@ angular.module('chatFactory', [])
 
       setup: function() {
         socket = socketFactory();
-        socket.forward('message');
-        socket.forward('join');
-        socket.forward('init');
-        socket.forward('leave');
+        socket.forward(['message', 'join', 'init', 'leave']);
       },
 
       join: function(nickname) {
