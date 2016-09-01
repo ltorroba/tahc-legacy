@@ -1,5 +1,5 @@
 angular.module('chatFactory', [])
-  .factory('ChatFactory', ['$log', 'socketFactory', function($log, socketFactory) {
+  .factory('ChatFactory', ['socketFactory', function(socketFactory) {
     var socket;
     return {
       desired_group_size: -1,
