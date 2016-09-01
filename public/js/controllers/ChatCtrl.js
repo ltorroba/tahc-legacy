@@ -1,6 +1,6 @@
 angular.module('ChatCtrl', ['chatFactory'])
 
-  .controller('ChatController', function($log, $scope, ChatFactory) {
+  .controller('ChatController', function($log, $scope, $timeout, ChatFactory) {
     $scope.room = ChatFactory;
 
     $scope.sendMessage = function() {
@@ -23,5 +23,12 @@ angular.module('ChatCtrl', ['chatFactory'])
     // Called when another user leaves the room
     $scope.$on('socket:leave', function(event, data) {
       ChatFactory.users.splice(ChatFactory.users.indexOf(data.name), 1);
+    });
+
+    // Called when socket disconnects
+    $scope.$on('socket:disconnect', function(event) {
+      $timeout(function() {
+        ChatFactory.messages.push({ name: 'Logger', content: 'Lost connection to server!' });
+      });
     });
   });
