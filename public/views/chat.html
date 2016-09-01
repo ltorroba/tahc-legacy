@@ -14,7 +14,7 @@
           <h4>Members</h4>
 
           <div class="list-group">
-            <li class="list-group-item">User 1</li>
+            <li ng-repeat="user in room.users" class="list-group-item">{{user}}</li>
           </div>
         </div>
 
@@ -22,7 +22,7 @@
           <h4>Chat</h4>
 
           <div class="well">
-            <p ng-repeat="msg in messages">{{msg.content}}</p>
+            <p ng-repeat="msg in room.messages">{{msg.name}}: {{msg.content}}</p>
           </div>
 
           <div class="input-group">

@@ -3,10 +3,15 @@ angular.module('chatFactory', [])
     var socket;
     return {
       desired_group_size: -1,
+      messages: [],
+      users: [],
 
       setup: function() {
         socket = socketFactory();
         socket.forward('message');
+        socket.forward('join');
+        socket.forward('init');
+        socket.forward('leave');
       },
 
       join: function(nickname) {
